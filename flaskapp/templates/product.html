@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+{% block container %}
+<div class="top-pad">
+    <h1>
+        {{ product['name'] }}
+        <small>{{ product['category'] }}</small>
+    </h1>
+    <h3>$ {{ product['price'] }}</h3>
+    <br />
+    <br />
+    <div>
+        <button type="button" class="btn btn-primary" onclick="divolte.signal('cart',{text:this.innerText})">
+            Add to cart
+        </button>
+        <button type="button" class="btn btn-primary" onclick="divolte.signal('buy',{text:this.innerText})">
+            buy
+        </button>
+    </div>
+</div>
+{% endblock %}
+
+{% block recommend %}
+<div class="content-section">
+    <h3>Similar Product</h3>
+    <p class='text-muted'>This recommendation is based on similar product.
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-light">Product 1: </li>
+            <li class="list-group-item list-group-item-light">Product 2:</li>
+            <li class="list-group-item list-group-item-light">Product 3:</li>
+            <li class="list-group-item list-group-item-light">Product 4:</li>
+        </ul>
+    </p>
+</div>
+{% endblock %}

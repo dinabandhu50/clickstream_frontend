@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "coe-solutions-215839",
+  "private_key_id": "c9b1b2b721c83f988261354905b2cef9a31a9de4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCJDRdjLDEzqOWL\nJTbhGa1tYWb6xOREBa5yd0dqpVoA1vTb7n0tRmvUi4/BgQPRqEx/diBJWLdKpYWT\nJRxc2D0PJFUEp+D1HDCxHYWypf6gJ8uzypP8eXQigJz27auxNOMYtR4cB35BKm9s\naSPr4ufh6QROAwlw/CULLifSl5N5CNI+E2Sh62cBjReusxpywC5boEkc8LHxE/FY\nkag0urpb23HZptVGb2JtVhSMog5Esd2m7GVRWTOdmkdMz/kCMlTuUJ5F039+80yC\n6OsbQbr0ajPNimhDagRToY/ArosIhuqSKGadN+q8Aw91yFdbTDK5gehvxf13OQwS\n6ntq4yQjAgMBAAECggEALHj5jl5wRt23Qvxb/xaYfuZ9BsHuep5HWfCX1aT7fEtE\noLuWliMEaa+yAe5OIXIWBMR9vJ9Ttx7YJgQEXKJ0yd2V0xFw/8jaihbU5EBWTH0t\nblW9yM9Wnr2ScdR1AudxC/r13s2VrCrLhmfl1q1GZrn5AiGdJjNECAk9teom2j7H\ndetmJ0MvSTsCJ7hzMIelYCVG6WMcMy1otj4D85wjyZFVcEVwjuCwquZ2wg6ktnx6\ndtT6PcIAP4MeD3PLJ2O5bKzZQHSes6WumpyV4wovaqv5tfnXmD7EcqAKSe4zfmrc\n4XV67sfsmtczZOXybluhUsMKFO6NfPat8jys3XH4IQKBgQC/n4L8C2AasBb4VS1y\n8zAbtw10dGTYnGKknGyCdY3RSzlkm1Fsqq+AuqdAAtRjen+R22GqdiaCSczY+v3b\n6eFZzLmApRgAyoSlvWuXPium8hMxXDEiTBuP5/Mi/Ux1WM078AgdZQbcvoa2RDji\n2xErNPSe7Mat6/i8N2HVVF/poQKBgQC3GCJ3nX3pXoZZxaAgVUUv9pWrwJRN7LWi\neMLjJYl5wwS2dl1X8cMTvNdXW52p3IJxmg/FEswbc6Ayx75y4rOrGxAEcoPg+jv7\nUJVCMl9gVgJhO/wi/Up2Qfb9PXzgJClstf78KC1au8GTEE7f861yFTqSaAsSkRTb\nXRUJkO6fQwKBgGXpiPlRd3haJK1IZ9aV3gUvctl3uda2PYQ8qT0tFhK0xj5qmICJ\nurNlEeRqXNjXYpeJLMVC9zId2/OecXsPRUnEJvhzVXO+QZQATQNwDjlIz8pVtM//\n2DzN6LK4MnzKkMSK4VX40BCAyBaR7AtC5Tuse1k2pmgDcxNvBPo3WJdhAoGAdUu3\n4Qt7O4M77M0HjU8zWMvPDM399IH9xs04hQ5qKSA/p6jimdGfGMj059kgg05qHt8E\n1Ur6iWekrIN8RdtoIOjgdQjr5bhJrvHr/RGKOow/UA1+tOexyVrvIUM/+dQQ2b0q\nUl5m1+bK1y0uapiQeDKTaHHRDh71zqauMIex50MCgYAXT461OhsHv/SDJawxhnmG\nbxtJhzuIdJCzgU60PRe/iwArxm9A1GkCoJekf610MmPN6JkSxbHG4HVn6sALCrqQ\nKW86Ct78KfzpSBRWwiLHu1bYXK36FnIWkGQKKcVaaA0IZ3zepCx65wJ3DR9cwVwX\nCZ/Uz5BrcABzVdJyonmWTA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "accelerator-sa-gcp@coe-solutions-215839.iam.gserviceaccount.com",
+  "client_id": "105643239936145711696",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/accelerator-sa-gcp%40coe-solutions-215839.iam.gserviceaccount.com"
+}

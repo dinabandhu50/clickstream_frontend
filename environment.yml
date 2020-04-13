@@ -1,0 +1,14 @@
+dependencies:
+  - python=3.7
+  - pip
+  - pip:
+      - flask
+      - gcsfs
+      - numpy
+      - flask-wtf
+      - flask-bcrypt
+      - flask-login
+      - flask-sqlalchemy
+      - WTForms
+      - SQLAlchemy
+      - Pillow

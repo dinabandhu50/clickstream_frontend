@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+{% block container %}
+<!-- <div class=grid-container> -->
+<div class="row">
+    {% for id, product in products.items() %}
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+        <!-- <div class="grid-container"> -->
+        <a href="{{ url_for('product',uname=current_user.username,uid=current_user.id, pname=product.name ,iid=id) }}"
+            class="fancybox" rel="ligthbox">
+            <center>
+                <img src="../static/images/image.png" style="width:50px;height:60px;" alt="" />
+            </center>
+            <div class="caption">
+                <p>
+                    <center>
+                        {{product['name']}}
+                        <br>
+                        <small>($ {{ product['price'] }})</small>
+                    </center>
+                </p>
+            </div>
+        </a>
+    </div>
+    <!-- </div> -->
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block recommend %}
+<div class="content-section">
+    <h3>Recommendation for You</h3>
+    <p class='text-muted'>This recommendation is based on your purchase history.
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-light">Product 1: </li>
+            <li class="list-group-item list-group-item-light">Product 2:</li>
+            <li class="list-group-item list-group-item-light">Product 3:</li>
+            <li class="list-group-item list-group-item-light">Product 4:</li>
+        </ul>
+    </p>
+</div>
+{% endblock %}
