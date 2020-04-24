@@ -8,7 +8,8 @@
         <a href="{{ url_for('product',uname=current_user.username,uid=current_user.id, pname=product.name ,iid=id) }}"
             class="fancybox" rel="ligthbox">
             <center>
-                <img src="../static/images/image.png" style="width:50px;height:60px;" alt="" />
+
+                <img src="{{url_for('static', filename='images/image.png')}}" style="width:50px;height:60px;" alt="" />
             </center>
             <div class="caption">
                 <p>
@@ -31,10 +32,9 @@
     <h3>Recommendation for You</h3>
     <p class='text-muted'>This recommendation is based on your purchase history.
         <ul class="list-group">
-            <li class="list-group-item list-group-item-light">Product 1: </li>
-            <li class="list-group-item list-group-item-light">Product 2:</li>
-            <li class="list-group-item list-group-item-light">Product 3:</li>
-            <li class="list-group-item list-group-item-light">Product 4:</li>
+            {%for i in rec_list%}
+            <li class="list-group-item list-group-item-light">Product 1: {{products[i]}}</li>
+            {%endfor%}
         </ul>
     </p>
 </div>

@@ -8,9 +8,16 @@ from flaskapp import app, db, bcrypt
 from flask_login import login_user, current_user, logout_user, login_required
 import pickle
 import random
+# from google.oauth2 import service_account
+from flaskapp.recommendations import Recommendations
 # import gcsfs
 # import numpy as np
+# credentials = service_account.Credentials.from_service_account_file(
+#     './flaskapp/coe-solutions-215839-c9b1b2b721c8.json')
 
+# credentials = service_account.Credentials.from_service_account_file(os.path.join(
+#     os.getcwd(), "coe-solutions-215839-c9b1b2b721c8.json"))
+rec_util = Recommendations()
 
 PRODUCTS = {
     '1': {
@@ -98,10 +105,14 @@ def default():
         return render_template('default.html', title='Default')
 
 
-@app.route('/home/<uname>/<uid>')
+@app.route('/home/<uname>/<uid>', methods=["GET", "POST"])
 @login_required
 def home(uname, uid):
-    return render_template('home.html', products=PRODUCTS, uname=current_user.username, uid=current_user.id)
+    user_id = current_user.id
+    n_rec = 4
+    # rec_list = rec_util.get_recommendations(user_id, n_rec)
+    rec_list = [3, 4, 5]
+    return render_template('home.html', products=PRODUCTS, uname=current_user.username, uid=user_id, rec_list=rec_list)
 
 
 @app.route('/login', methods=["GET", "POST"])

@@ -12,3 +12,4 @@ dependencies:
       - WTForms
       - SQLAlchemy
       - Pillow
+      - google-cloud-storage
